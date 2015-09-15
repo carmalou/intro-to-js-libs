@@ -12,8 +12,12 @@
       h1, h2, h3 {
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
+        font-size: 5em;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content {font-size: 1.5em;}
+      .remark-slide-content h1 {font-size: 2.5em;}
+      .remark-slide-content h3 {font-size: 1.5em;}
     </style>
   </head>
   <body>
@@ -23,7 +27,14 @@ class: center, middle
 
 # Intro to JS Libraries
 
+???
+Remember to breathe!
+
+`P` for presenter mode.
+`C` to open a cloned window.
+
 ---
+class: left, middle
 
 # Agenda
 
@@ -36,10 +47,12 @@ class: center, middle
 7. Top NPM downloads and companies who use them
 
 ---
+class: center, middle
 
 # Introduction
 
 ---
+class: center, middle
 
 # About me
 
@@ -58,36 +71,42 @@ class: center, middle
 ???
 Hi! My name is Carmen, and I'm a web developer with Weather Decision Technologies. I'm also working on TwisterJS -- a series of apps to teach underprivileged children about tech
 ---
+class: center, middle
 
 # What is a library?
 
 ---
+class: center, middle
 
 A JavaScript library is a bunch of pre-written JavaScript functions. Basically someone has gone in and written out all the less-than-fun stuff, so you don't have to. It's very handy.
 
 ---
+class: center, middle
 
 # But wait....what's a framework?
 
 ---
+class: center, middle
 
 A JavaScript framework is _also_ a bunch of pre-written JavaScript functions.
 
 ---
+class: center, middle
 
 # I'm confused....what's the difference?
 
 ---
+class: center, middle
 
 Well strictly speaking, there isn't one. Both provide prewritten functions for you to use. You'll often hear the words used interchangeably.
 
 ---
+class: center, middle
 
 # However
 
 ---
-
-The best explanation I've found is this:
+class: left, middle
 
 A *library* will allow you to pick and choose which functions you would like to use. Much like a physical library doesn't require you to read every book in a specific order, and you can check out whichever books you want.
 
@@ -97,69 +116,87 @@ A *framework* will provide a very specific way to write your code. And much like
 Angular/jQuery comparison
 
 ---
+class: center, middle
 
 # When should I use a library?
 
 ---
+class: center, middle
 
-A library can be very useful in large-scale applications.
+### A library can be very useful in large-scale applications.
 
 ???
 For instance a social network with millions of users which requires instanteous updating might want to use a framework.
 
 ---
+class: center, middle
 
-When you understand how to write this without the library.
+### When you understand how to write this without the library.
 
 ???
 If you don't understand what you're doing without the library, please be strong and take a step back to learn it without the library
 
 ---
+class: center, middle
 
-Whenever you want.
+### Whenever you want.
 
 ???
 Really it all just boils down to personal preference. Some people really prefer using libraries to get things done fast, while others don't want the complexity. It really just comes down to your preference.
 
 ---
+class: center, middle
 
 # When should I *not* use a library?
 
 ---
+class: center, middle
 
-If you are working on a small project.
+### If you are working on a small project.
 
 ???
 Adding a library adds a lot of complexity to your project. Consider whether or not that complexity is actually necessary, or if you can get by without the library.
 
 ---
+class: center, middle
 
-If you don't know how to write this without the library.
+### If you don't know how to write this without the library.
 
 ???
 I said it before, but I think it stands repeating. If you are working on a project and you can't do it without the library, step back and learn how to do the work without the library. It will be far more beneficial later to understand what is going on under the hood.
 
 ---
+class: center, middle
+
+### Whenever you want.
+
+---
+class: center, middle
 
 # Ok, I'm in. What's the best library?
 
 ???
 Ok, I will let you in on a little secret. The best library is....
 ---
+class: center, middle
 
 # PSYCH!
 
 ---
+class: center, middle
 
 There isn't really a 'best' framework. Some are more beneficial in certain projects than others, but there isn't really a 'best' library.
 
 ---
+class: center, middle
 
 # Top 5 Libraries
 
 ???
 I pulled these from the NPM list of most depended-upon libraries
+
 ---
+class: left, middle
 
 1. lodash
 2. async
@@ -168,7 +205,71 @@ I pulled these from the NPM list of most depended-upon libraries
 5. commander
 
 ---
+class: center, middle
 
+# lodash
+
+A collection of JavaScript functions for manipulating objects, arrays, and collections.
+
+---
+class: center, middle
+
+# async
+
+Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript. Basically there are some common issues that can arise in asynchronous JavaScript, and this library will help watch out for those.
+
+---
+class: center, middle
+
+# underscore
+
+A collection of JavaScript functions for manipulating objects, arrays, and collections. Lodash was forked from this library.
+
+---
+class: center, middle
+
+# request
+
+Simplifies making http calls
+
+---
+class: center, middle
+
+# commander
+
+Parses command line arguments, which can be helpful if you have more complex options being passed in.
+
+---
+class: center, middle
+
+# Wrapping Up
+
+---
+class: center, middle
+
+Remember that not all libraries are going to work together. If you are using more than one library, check to make sure that they are compatible.
+
+---
+class: center, middle
+
+For example, one library might use promises for async, while another uses streams.
+
+These will *not* work together.
+
+---
+class: center, middle
+
+Be careful using the latest version of any library. Look for the word 'stable'
+
+---
+class: center, middle
+
+When including a library you can use 'npm install', download the library and include it in your project, or link to it. This depends upon how the library has been made available. Check your library on GitHub and see what is recommended.
+
+---
+class: center, middle
+
+# Questions?
 
 
     </textarea>
