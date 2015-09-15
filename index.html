@@ -14,6 +14,7 @@
         font-weight: normal;
         font-size: 5em;
       }
+      pre {text-align: left;}
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
       .remark-slide-content {font-size: 2em;}
       .remark-slide-content h1 {font-size: 2.5em;}
@@ -114,6 +115,30 @@ A *framework* will provide a very specific way to write your code. And much like
 
 ???
 Angular/jQuery comparison
+
+---
+class: center, middle
+
+### jQuery
+``` js
+$( "#productinfo p:contains('Orientation: One-Sided')" )
+  .replaceWith( "<p>Orientation: All-Around</p>" );
+```
+---
+class: center, middle
+
+### AngularJS
+``` js
+app.controller('tabSetup', function($http) {
+$http.get('JSON/buildingBlocks.json')
+  .success(function(data) {
+      this.tabMenu = data;
+  }.bind(this))
+  .error(function(data) {
+      alert("FAILED TO GET");
+  });
+});
+```
 
 ---
 class: center, middle
